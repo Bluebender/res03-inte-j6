@@ -1,0 +1,39 @@
+@import"reset";
+@import "vars";
+@import "header";
+
+html{  
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+//Positionnement du main et aside
+body > main{
+    // height: 90vh;
+    width: 100vw;
+    background-color: $gradientColor2;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr 0.4fr;
+    
+    > section{
+        grid-column: 2 / 3;
+    }    
+    > aside{
+        grid-column: 3 / 4;
+    }
+}
+
+body > main > section{
+    display: grid;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    
+    > section{
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+img{
+    width: 10vw;
+}
